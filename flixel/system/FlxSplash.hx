@@ -69,7 +69,7 @@ class FlxSplash extends FlxState
 		_text = new TextField();
 		_text.selectable = false;
 		_text.embedFonts = true;
-		var dtf = new TextFormat(FlxAssets.FONT_DEFAULT, 16, 0xFFFFFF);
+		var dtf = new TextFormat(FlxAssets.FONT_DEFAULT, 16, 0x0000FF);
 		dtf.align = TextFormatAlign.CENTER;
 		_text.defaultTextFormat = dtf;
 		_text.text = "Alafandy";
