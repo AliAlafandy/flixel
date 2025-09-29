@@ -51,7 +51,7 @@ class FlxSplash extends FlxState
 		#end
 
 		_times = [0.041, 0.184, 0.334, 0.495, 0.636];
-		_colors = [0x00b922, 0xffc132, 0xf5274e, 0x3641ff, 0x04cdfb];
+		_colors = [0x0000FF, 0x0000FF, 0x0000FF, 0x0000FF, 0x0000FF];
 		_functions = [drawGreen, drawYellow, drawRed, drawBlue, drawLightBlue];
 
 		for (time in _times)
@@ -69,10 +69,10 @@ class FlxSplash extends FlxState
 		_text = new TextField();
 		_text.selectable = false;
 		_text.embedFonts = true;
-		var dtf = new TextFormat(FlxAssets.FONT_DEFAULT, 16, 0xffffff);
+		var dtf = new TextFormat(FlxAssets.FONT_DEFAULT, 16, 0xFFFFFF);
 		dtf.align = TextFormatAlign.CENTER;
 		_text.defaultTextFormat = dtf;
-		_text.text = "HaxeFlixel";
+		_text.text = "Alafandy";
 		FlxG.stage.addChild(_text);
 
 		onResize(stageWidth, stageHeight);
@@ -115,7 +115,7 @@ class FlxSplash extends FlxState
 	{
 		_functions[_curPart]();
 		_text.textColor = _colors[_curPart];
-		_text.text = "HaxeFlixel";
+		_text.text = "Alafandy";
 		_curPart++;
 
 		if (_curPart == 5)
@@ -128,7 +128,7 @@ class FlxSplash extends FlxState
 
 	function drawGreen():Void
 	{
-		_gfx.beginFill(0x00b922);
+		_gfx.beginFill(0x0000FF);
 		_gfx.moveTo(0, -37);
 		_gfx.lineTo(1, -37);
 		_gfx.lineTo(37, 0);
@@ -143,7 +143,7 @@ class FlxSplash extends FlxState
 
 	function drawYellow():Void
 	{
-		_gfx.beginFill(0xffc132);
+		_gfx.beginFill(0x0000FF);
 		_gfx.moveTo(-50, -50);
 		_gfx.lineTo(-25, -50);
 		_gfx.lineTo(0, -37);
@@ -155,7 +155,7 @@ class FlxSplash extends FlxState
 
 	function drawRed():Void
 	{
-		_gfx.beginFill(0xf5274e);
+		_gfx.beginFill(0x0000FF);
 		_gfx.moveTo(50, -50);
 		_gfx.lineTo(25, -50);
 		_gfx.lineTo(1, -37);
@@ -167,7 +167,7 @@ class FlxSplash extends FlxState
 
 	function drawBlue():Void
 	{
-		_gfx.beginFill(0x3641ff);
+		_gfx.beginFill(0x0000FF);
 		_gfx.moveTo(-50, 50);
 		_gfx.lineTo(-25, 50);
 		_gfx.lineTo(0, 37);
@@ -179,7 +179,7 @@ class FlxSplash extends FlxState
 
 	function drawLightBlue():Void
 	{
-		_gfx.beginFill(0x04cdfb);
+		_gfx.beginFill(0x0000FF);
 		_gfx.moveTo(50, 50);
 		_gfx.lineTo(25, 50);
 		_gfx.lineTo(1, 37);
